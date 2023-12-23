@@ -7,6 +7,7 @@
   padding: 0;
 }
 
+
 body {
   font-family: "Poppins", sans-serif;
 
@@ -44,6 +45,7 @@ nav {
   gap: 2rem;
   list-style: none;
   font-size: 1.5rem;
+  text-align: right;
 }
 
 a {
@@ -304,7 +306,7 @@ section {
   border-radius: 2rem;
   border: rgb(53, 53, 53) 0.1rem solid;
   border-color: rgb(163, 163, 163);
-  text-align: center;
+  text-align: left;
 }
 .text-container
 {
@@ -325,21 +327,44 @@ section {
 
 /* EXPERIENCE SECTION */
 
+.experience-details-container {
+  margin-bottom: 10px;
+
+}
+
+.experience-sub-title {
+  font-size: 24px;
+  color: #333;
+}
+
+.experience-duration,
+.experience-company {
+  color: #777;
+  margin-top: -10;
+}
+
+.experience-description {
+  margin-top: 10px;
+  color: #555;
+  border: 1px solid black;
+  
+}
+
+
 #experience {
   position: relative;
 }
 
-.experience-sub-title {
+#technical_skill{
+  position: relative;
+  margin-top: 500px;
+}
+
+.skill-sub-title {
   color: rgb(85, 85, 85);
   font-weight: 600;
   font-size: 1.75rem;
-  margin-bottom: 2rem;
-}
-
-.experience-details-container {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
+  margin-bottom: 1rem;
 }
 
 .article-container {
@@ -350,6 +375,7 @@ section {
   gap: 2.5rem;
   justify-content: space-around;
 }
+
 
 article {
   display: flex;
@@ -431,14 +457,17 @@ article .icon {
 
 /* FOOTER SECTION */
 
-footer {
-  height: 26vh;
+/* footer {
+  height: 26vh; 
   margin: 0 1rem;
-}
+} */
 
 footer p {
   text-align: center;
 }
+
+
+/* Url image Annimation */
 .loading-container{
     position: fixed;
     top: 0;
@@ -459,3 +488,54 @@ footer p {
     font-size: 1.5rem; /* Adjust the font size as needed */
     color: #e8e9eb;
 }
+
+
+/* Dark Mode */
+body.dark-mode {
+  background-color: #1a1a1a; /* Update with your preferred dark background color */
+  color: white;
+}
+
+.theme-toggle {
+  display: none;
+}
+
+.toggle-container {
+  position: relative;
+}
+
+.toggle-label {
+  cursor: pointer;
+  display: block;
+  height: 24px;
+  width: 48px;
+  background-color: #ccc;
+  border-radius: 12px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: background-color 0.3s;
+}
+
+.theme-toggle:checked + .toggle-label {
+  background-color: #2196F3; /* Change this color to your preferred theme color */
+} 
+
+.toggle-label::after {
+  content: '';
+  display: block;
+  height: 18px;
+  width: 18px;
+  background-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 4px;
+  transform: translateY(-50%);
+  transition: transform 0.3s;
+}
+
+.theme-toggle:checked + .toggle-label::after {
+  left: calc(100% - 4px);
+  transform: translate(-100%, -50%);
+} 
