@@ -1,3 +1,7 @@
+function refreshPage() {
+    location.reload();
+}
+
 function toggleMenu() {
     const menu = document.querySelector(".menu-links");
     const icon = document.querySelector(".hamburger-icon");
@@ -58,4 +62,25 @@ setTimeout(function () {
     mainContent.style.display = 'block'; // Display the main content
     document.body.style.overflow = 'auto'; // Restore scrolling
 }, 3000);
+
+
+
+
+function toggleTheme() {
+    const body = document.body;
+    body.classList.toggle('dark-mode');
+  
+    // Save the user's preference in local storage
+    const darkModeEnabled = body.classList.contains('dark-mode');
+    localStorage.setItem('darkMode', darkModeEnabled);
+  }
+  
+  // Check for user's dark mode preference on page load
+  document.addEventListener('DOMContentLoaded', function () {
+    const darkModeEnabled = localStorage.getItem('darkMode') === 'true';
+    if (darkModeEnabled) {
+      document.body.classList.add('dark-mode');
+      document.getElementById('themeToggle').checked = true;
+    }
+  });
 
