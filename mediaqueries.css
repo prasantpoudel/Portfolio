@@ -1,3 +1,14 @@
+@media only screen and (min-width: 1401px) {
+  /* Your styles for screens larger than 1400 pixels go here */
+  #contact{
+    height: fit-content;
+  }
+  #projects {
+    height: fit-content;
+    margin-top: 300px;
+  }   
+}
+
 @media screen and (max-width: 1400px) {
   #profile {
     height: 83vh;
@@ -6,9 +17,12 @@
   .about-containers {
     flex-wrap: wrap;
   }
-  #contact,
+  #contact{
+    height: fit-content;
+  }
   #projects {
     height: fit-content;
+    margin-top: 620px;
   }
 }
 
@@ -45,6 +59,11 @@
   .about-containers {
     margin-top: 0;
   }
+  #projects {
+    height: fit-content;
+    margin-top: 30px;
+  }   
+
 }
 
 @media screen and (max-width: 600px) {
@@ -99,5 +118,17 @@
   }
   .text-container {
     text-align: justify;
+  }
+  #projects {
+    height: fit-content;
+    margin-top: 10px;
+  }   
+  
+}
+
+@media only screen and (max-width: 428px) {
+  /* Your styles for the iPhone 15 Pro Max go here */
+  #about{
+    margin-top: -250px;
   }
 }
