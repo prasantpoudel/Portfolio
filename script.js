@@ -5,6 +5,8 @@ function toggleMenu() {
     icon.classList.toggle("open");
   }
 
+
+// code for favicon
 const favicon = document.getElementById('favicon');
 const frames = [
 './assets/Infinity-1s-200px/frame-1.png',
@@ -42,9 +44,18 @@ const frames = [
 let currentFrame = 0;
 
 function updateFavicon() {
-favicon.href = frames[currentFrame];
-currentFrame = (currentFrame + 1) % frames.length;
+    favicon.href = frames[currentFrame];
+    currentFrame = (currentFrame + 1) % frames.length;
 }
-
-// Update the favicon every 200 milliseconds (adjust as needed)
 setInterval(updateFavicon, 200);
+
+
+// code for first animation
+const loadingContainer = document.querySelector('.loading-container');
+const mainContent = document.getElementById('main-content');
+setTimeout(function () {
+    loadingContainer.style.display = 'none';
+    mainContent.style.display = 'block'; // Display the main content
+    document.body.style.overflow = 'auto'; // Restore scrolling
+}, 3000);
+
