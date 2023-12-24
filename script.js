@@ -59,7 +59,7 @@ const loadingContainer = document.querySelector('.loading-container');
 const mainContent = document.getElementById('main-content');
 setTimeout(function () {
     loadingContainer.style.display = 'none';
-    mainContent.style.display = 'block'; // Display the main content
+    // mainContent.style.display = 'block'; 
     document.body.style.overflow = 'auto'; // Restore scrolling
 }, 3000);
 
@@ -73,14 +73,50 @@ function toggleTheme() {
     // Save the user's preference in local storage
     const darkModeEnabled = body.classList.contains('dark-mode');
     localStorage.setItem('darkMode', darkModeEnabled);
+  
+
+    // Update the image source based on dark mode
+    const linkedInIcon = document.querySelector('.icon-linkedin');
+    linkedInIcon.src = darkModeEnabled
+      ? './assets/linkedin-app-icon.png' // Update with the path to your dark mode image
+      : './assets/linkedin.png'; // Update with the path to your default image
+    
+    const githubIcon = document.querySelector('.icon-github');
+    githubIcon.src = darkModeEnabled
+        ? './assets/github-dark.png' // Update with the path to your dark mode GitHub icon
+        : './assets/github.png';
+    
+    const FotterlinkedInIcon = document.querySelector('.linkedin-icon');
+    FotterlinkedInIcon.src = darkModeEnabled
+      ? './assets/linkedin-app-icon.png' // Update with the path to your dark mode image
+      : './assets/linkedin.png';
+
+    const EmailIcon = document.querySelector('.email-icon');
+    EmailIcon.src = darkModeEnabled
+      ? './assets/email-dark.png' // Update with the path to your dark mode image
+      : './assets/email.png';
   }
   
-  // Check for user's dark mode preference on page load
-  document.addEventListener('DOMContentLoaded', function () {
-    const darkModeEnabled = localStorage.getItem('darkMode') === 'true';
-    if (darkModeEnabled) {
-      document.body.classList.add('dark-mode');
-      document.getElementById('themeToggle').checked = true;
-    }
-  });
+  
+  // Check for the user's dark mode preference on page load
+document.addEventListener('DOMContentLoaded', function () {
+  const darkModeEnabled = localStorage.getItem('darkMode') === 'true';
+  if (darkModeEnabled) {
+    document.body.classList.add('dark-mode');
+    document.getElementById('themeToggle').checked = true;
+    
+    // Update the image source based on dark mode
+    const linkedInIcon = document.querySelector('.icon-linkedin');
+    linkedInIcon.src = './assets/linkedin-dark.png'; // Update with the path to your dark mode image
+
+    const githubIcon = document.querySelector('.icon-github');
+    githubIcon.src = './assets/github-dark.png'; // Update with the path to your dark mode GitHub icon
+
+    const FotterlinkedInIcon = document.querySelector('.linkedin-icon');
+    FotterlinkedInIcon.src = './assets/linkedin-dark.png';
+
+    const EmailIcon = document.querySelector('.email-icon');
+    EmailIcon.src = './assets/email-dark.png';
+  }
+});
 

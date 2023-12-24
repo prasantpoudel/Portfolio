@@ -7,24 +7,34 @@
   padding: 0;
 }
 
-
 body {
   font-family: "Poppins", sans-serif;
-  transition: background-color 0.3s, color 0.3s;
-
+  /* transition: background-color 0.3s, color 0.3s; */
 }
 
-body.dark-mode {
-  background-color: #1a1a1a;
-  color: white;
-}
 
 html {
   scroll-behavior: smooth;
 }
 
 p {
-  color: rgb(85, 85, 85);
+  color: Black;
+}
+body.dark-mode p{
+  color:white;
+}
+
+body.dark-mode p1{
+  color:red;
+}
+body.dark-mode p2{
+  color:black;
+}
+body.dark-mode p3{
+  color:black;
+}
+body.dark-mode h3{
+  color:black
 }
 
 /* TRANSITION */
@@ -61,10 +71,15 @@ a {
 }
 
 a:hover {
-  color: grey;
+  /* color: grey; */
+  color:red;
   text-decoration: underline;
   text-underline-offset: 1rem;
   text-decoration-color: rgb(181, 181, 181);
+}
+
+body.dark-mode a:hover{
+  color:red
 }
 
 .logo {
@@ -79,11 +94,13 @@ a:hover {
 
 #hamburger-nav {
   display: none;
+  
 }
 
 .hamburger-menu {
   position: relative;
   display: inline-block;
+  
 }
 
 .hamburger-icon {
@@ -92,6 +109,7 @@ a:hover {
   justify-content: space-between;
   height: 24px;
   width: 30px;
+  
   cursor: pointer;
 }
 
@@ -101,6 +119,11 @@ a:hover {
   background-color: black;
   transition: all 0.3 ease-in-out;
 }
+
+body.dark-mode .hamburger-icon span{
+  background-color: red;
+}
+
 
 .menu-links {
   position: absolute;
@@ -222,6 +245,16 @@ section {
   cursor: pointer;
   height: 2rem;
 }
+.icon-linkedin,.icon-github{
+  cursor: pointer;
+  height: 2rem;
+}
+
+.linkedin-icon,.email-icon{
+  cursor: pointer;
+  height: 2rem;
+}
+
 
 /* BUTTONS */
 
@@ -244,6 +277,13 @@ section {
   border: rgb(53, 53, 53) 0.1rem solid;
 }
 
+body.dark-mode .btn-color-1{
+  border: white 0.1rem solid;
+}
+body.dark-mode .btn-color-2{
+  border: white 0.1rem solid;
+}
+
 .btn-color-1:hover,
 .btn-color-2:hover {
   cursor: pointer;
@@ -254,7 +294,14 @@ section {
   background: rgb(53, 53, 53);
   color: white;
 }
+body.dark-mode .btn-color-2{
+  color:white
+}
 
+body.dark-mode .btn-color-2:hover {
+  background: white ;
+  color: rgb(53, 53, 53);
+}
 .btn-color-1:hover {
   background: rgb(0, 0, 0);
 }
@@ -300,6 +347,11 @@ section {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5)
 }
 
+body.dark-mode .about-pic{
+  border: 3px solid white; 
+
+}
+
 .arrow {
   position: absolute;
   right: -5rem;
@@ -331,6 +383,12 @@ section {
   width: 400px;
   margin: auto 0;
 }
+.pic{
+  background-color: yellow;
+  border: 3px solid white; 
+  border-radius: 70px; 
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
 
 /* EXPERIENCE SECTION */
 
@@ -347,11 +405,11 @@ section {
 .experience-duration,
 .experience-company {
   color: #777;
-  margin-top: -10;
+  /* margin-top: -10; */
 }
 
 .experience-description {
-  margin-top: 10px;
+  /* margin-top: 10px; */
   color: #555;
   border: 1px solid black;
   
@@ -421,6 +479,14 @@ article .icon {
   color: black;
   border-color: rgb(163, 163, 163);
 }
+
+body.dark-mode .project-btn{
+  color:white;
+  background-color: black;
+  border-color: black;
+}
+
+
 
 /* CONTACT */
 
@@ -496,8 +562,18 @@ footer p {
     color: #e8e9eb;
 }
 
+/* Dark Mode theme */
 
-/* Dark Mode */
+body.dark-mode a {
+  color: white;
+}
+
+
+
+
+
+
+/* Dark Mode Code */
 body.dark-mode {
   background-color: #1a1a1a; /* Update with your preferred dark background color */
   color: white;
@@ -515,17 +591,18 @@ body.dark-mode {
   display: block;
   height: 24px;
   width: 48px;
-  background-color: #ccc;
+  background-color:black;
   border-radius: 12px;
   position: fixed;
   align-items: right;
   /* top: 10%; */
   transform: translateY(-50%);
-  transition: background-color 0.3s;
+  transition: background-color 0.3,
 }
 
 .theme-toggle:checked + .toggle-label {
   background-color: #2196F3; /* Change this color to your preferred theme color */
+
 } 
 
 .toggle-label::after {
