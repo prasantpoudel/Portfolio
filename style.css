@@ -10,7 +10,13 @@
 
 body {
   font-family: "Poppins", sans-serif;
+  transition: background-color 0.3s, color 0.3s;
 
+}
+
+body.dark-mode {
+  background-color: #1a1a1a;
+  color: white;
 }
 
 html {
@@ -123,6 +129,7 @@ a:hover {
 
 .menu-links.open {
   max-height: 300px;
+  background: border-box;
 }
 
 .hamburger-icon.open span:first-child {
