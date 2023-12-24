@@ -23,9 +23,13 @@ p {
 body.dark-mode p{
   color:white;
 }
+/* p2{
+  text-align: center;
+  color:blue
+} */
 
 body.dark-mode p1{
-  color:red;
+  color:goldenrod;
 }
 body.dark-mode p2{
   color:black;
@@ -72,14 +76,14 @@ a {
 
 a:hover {
   /* color: grey; */
-  color:red;
+  color:goldenrod;
   text-decoration: underline;
   text-underline-offset: 1rem;
   text-decoration-color: rgb(181, 181, 181);
 }
 
 body.dark-mode a:hover{
-  color:red
+  color:goldenrod
 }
 
 .logo {
@@ -121,7 +125,7 @@ body.dark-mode a:hover{
 }
 
 body.dark-mode .hamburger-icon span{
-  background-color: red;
+  background-color: goldenrod;
 }
 
 
@@ -220,6 +224,7 @@ section {
 
 .section__text__p1 {
   text-align: center;
+  
 }
 
 .section__text__p2 {
@@ -259,6 +264,7 @@ section {
 /* BUTTONS */
 
 .btn-container {
+  margin-top: 30px;
   display: flex;
   justify-content: center;
   gap: 1rem;
@@ -411,7 +417,7 @@ body.dark-mode .about-pic{
 .experience-description {
   /* margin-top: 10px; */
   color: #555;
-  border: 1px solid black;
+  
   
 }
 
