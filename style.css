@@ -357,7 +357,7 @@ section {
 
 #technical_skill{
   position: relative;
-  margin-top: 500px;
+  /* margin-top: 500px; */
 }
 
 .skill-sub-title {

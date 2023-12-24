@@ -3,10 +3,24 @@
   #contact{
     height: fit-content;
   }
+  #about,
+  #experience, 
+  #technical_skill,
   #projects {
     height: fit-content;
-    margin-top: 300px;
-  }   
+  }  
+}
+@media screen and (min-width: 1200px) and (max-width: 1400px) {
+  /* Your styles for screens between 1200px and 1400px go here */
+  #contact{
+    height: fit-content;
+  }
+  #about,
+  #experience, 
+  #technical_skill
+  {
+    height: fit-content;
+  } 
 }
 
 @media screen and (max-width: 1400px) {
@@ -22,7 +36,6 @@
   }
   #projects {
     height: fit-content;
-    margin-top: 620px;
   }
 }
 
@@ -54,7 +67,9 @@
   .section__pic-container {
     width: 275px;
     height: 275px;
-    margin: 0 auto 2rem;
+    /* margin: 0 auto 2rem; */
+    margin: 0 37%;
+    margin-bottom: 20px;
   }
   .about-containers {
     margin-top: 0;
@@ -67,9 +82,8 @@
 }
 
 @media screen and (max-width: 600px) {
-  #contact,
-  footer {
-    height: 40vh;
+  #contact{
+    height: 25vh;
   }
   #profile {
     height: 83vh;
@@ -80,7 +94,7 @@
   }
   footer nav {
     height: fit-content;
-    margin-bottom: 2rem;
+    /* margin-bottom: 2rem; */
   }
   .about-containers,
   .contact-info-upper-container,
@@ -128,7 +142,16 @@
 
 @media only screen and (max-width: 428px) {
   /* Your styles for the iPhone 15 Pro Max go here */
-  #about{
-    margin-top: -250px;
+  /* #about{
+    margin-top: -200px;
+  } */
+  footer nav {
+    height: fit-content;
+    margin-bottom: 1px;
+  }
+  .section__pic-container {
+    width: auto;
+    height: 46vw;
+    justify-content: center;
   }
 }
