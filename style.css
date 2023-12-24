@@ -501,7 +501,9 @@ body.dark-mode {
 }
 
 .toggle-container {
+  /* position: relative; */
   position: relative;
+
 }
 
 .toggle-label {
@@ -511,8 +513,8 @@ body.dark-mode {
   width: 48px;
   background-color: #ccc;
   border-radius: 12px;
-  position: absolute;
-  top: 50%;
+  position: fixed;
+  /* top: 10%; */
   transform: translateY(-50%);
   transition: background-color 0.3s;
 }
@@ -528,7 +530,7 @@ body.dark-mode {
   width: 18px;
   background-color: #fff;
   border-radius: 50%;
-  position: absolute;
+  position: fixed;
   top: 50%;
   left: 4px;
   transform: translateY(-50%);
