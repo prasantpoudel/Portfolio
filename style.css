@@ -23,22 +23,21 @@ p {
 body.dark-mode p{
   color:white;
 }
-/* p2{
-  text-align: center;
-  color:blue
-} */
+p3 {
+  color:black;
+}
 
 body.dark-mode p1{
   color:goldenrod;
 }
 body.dark-mode p2{
-  color:black;
+  color:whitesmoke;
 }
 body.dark-mode p3{
-  color:black;
+  color:whitesmoke;
 }
 body.dark-mode h3{
-  color:black
+  color:whitesmoke
 }
 
 /* TRANSITION */
@@ -88,10 +87,15 @@ body.dark-mode a:hover{
 
 .logo {
   font-size: 2rem;
+  color:Black
 }
 
+body.dark-mode .logo{
+  color:goldenrod;
+}
 .logo:hover {
   cursor: default;
+  /* color: goldenrod; */
 }
 
 /* HAMBURGER MENU */
@@ -280,19 +284,15 @@ section {
 
 .btn-color-1,
 .btn-color-2 {
-  border: rgb(53, 53, 53) 0.1rem solid;
+  border: #02040a 0.1rem solid;
 }
 
+/* Top section button */
 body.dark-mode .btn-color-1{
   border: white 0.1rem solid;
 }
 body.dark-mode .btn-color-2{
   border: white 0.1rem solid;
-}
-
-.btn-color-1:hover,
-.btn-color-2:hover {
-  cursor: pointer;
 }
 
 .btn-color-1,
@@ -318,6 +318,7 @@ body.dark-mode .btn-color-2:hover {
 
 .btn-color-2:hover {
   border: rgb(255, 255, 255) 0.1rem solid;
+  /* border: 1px solid red; */
 }
 
 .btn-container {
@@ -334,6 +335,7 @@ body.dark-mode .btn-color-2:hover {
   gap: 2rem;
   margin-bottom: 2rem;
   margin-top: 2rem;
+ 
 }
 
 .about-details-container {
@@ -347,10 +349,9 @@ body.dark-mode .btn-color-2:hover {
 }
 
 .about-pic {
-  /* border-radius: 2rem; */
-  border: 3px solid #180d0d; 
+  border: 3px solid white; 
   border-radius: 70px; 
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5)
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 body.dark-mode .about-pic{
@@ -369,9 +370,15 @@ body.dark-mode .about-pic{
   flex: 1;
   background: white;
   border-radius: 2rem;
-  border: rgb(53, 53, 53) 0.1rem solid;
-  border-color: rgb(163, 163, 163);
+  border: #02040a 0.3rem solid;
+  /* border-color: rgb(163, 163, 163); */
   text-align: left;
+}
+
+body.dark-mode .details-container {
+  background:#02040a;
+  border:#f0f0f0 0.3rem solid;
+
 }
 .text-container
 {
@@ -390,16 +397,21 @@ body.dark-mode .about-pic{
   margin: auto 0;
 }
 .pic{
-  background-color: yellow;
+  /* background-color: yellow; */
+  background-color:#b8c8cc ;
   border: 3px solid white; 
   border-radius: 70px; 
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+body.dark-mode .pic{
+  background-color:goldenrod ;
 }
 
 /* EXPERIENCE SECTION */
 
 .experience-details-container {
   margin-bottom: 10px;
+  
 
 }
 
@@ -410,13 +422,14 @@ body.dark-mode .about-pic{
 
 .experience-duration,
 .experience-company {
-  color: #777;
-  /* margin-top: -10; */
+  color: #4e1750;
+  font-size: bold;
+  margin-top: -10;
 }
 
 .experience-description {
   /* margin-top: 10px; */
-  color: #555;
+  color: black;
   
   
 }
@@ -483,13 +496,15 @@ article .icon {
 
 .project-btn {
   color: black;
-  border-color: rgb(163, 163, 163);
+  /* border-color: rgb(163, 163, 163); */
+  border:#02040a 1px solid;
+  background-color: #f0f0f0;
 }
 
 body.dark-mode .project-btn{
   color:white;
   background-color: black;
-  border-color: black;
+  border-color: #f0f0f0;
 }
 
 
@@ -581,8 +596,8 @@ body.dark-mode a {
 
 /* Dark Mode Code */
 body.dark-mode {
-  background-color: #1a1a1a; /* Update with your preferred dark background color */
-  color: white;
+  background-color: #02040a; /* Update with your preferred dark background color */
+  color: #f0f0f0;
 }
 
 .theme-toggle {
