@@ -78,7 +78,7 @@ function toggleTheme() {
     // Update the image source based on dark mode
     const linkedInIcon = document.querySelector('.icon-linkedin');
     linkedInIcon.src = darkModeEnabled
-      ? './assets/linkedin-app-icon.png' // Update with the path to your dark mode image
+      ? './assets/linkedin-dark.png' // Update with the path to your dark mode image
       : './assets/linkedin.png'; // Update with the path to your default image
     
     const githubIcon = document.querySelector('.icon-github');
@@ -88,7 +88,7 @@ function toggleTheme() {
     
     const FotterlinkedInIcon = document.querySelector('.linkedin-icon');
     FotterlinkedInIcon.src = darkModeEnabled
-      ? './assets/linkedin-app-icon.png' // Update with the path to your dark mode image
+      ? './assets/linkedin-dark.png' // Update with the path to your dark mode image
       : './assets/linkedin.png';
 
     const EmailIcon = document.querySelector('.email-icon');
