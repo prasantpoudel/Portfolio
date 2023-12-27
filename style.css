@@ -614,7 +614,7 @@ body.dark-mode {
   width: 48px;
   background-color:black;
   border-radius: 12px;
-  position: fixed;
+  position: absolute;
   align-items: right;
   /* top: 10%; */
   transform: translateY(-50%);
@@ -633,7 +633,7 @@ body.dark-mode {
   width: 18px;
   background-color: #fff;
   border-radius: 50%;
-  position: relative;
+  position: absolute;
   top: 50%;
   left: 4px;
   transform: translateY(-50%);
